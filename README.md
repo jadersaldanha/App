@@ -10,13 +10,13 @@ A classe DominioTest.php instancia um dominio a ser registrado pela classe Domin
 
 Para rodar a solucao localmente:
 
-git clone https://github.com/jadersaldanha/App.git
+$ git clone https://github.com/jadersaldanha/App.git
 
-cd App
+$ cd App
 
-compose install
+$ compose install
 
-./vendor/bin/phpunit
+$ ./vendor/bin/phpunit
 
 # Para rodar e ver relatorios na nuvem no CIRCLE CI
 
