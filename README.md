@@ -20,7 +20,7 @@ compose install
 
 # Para rodar e ver relatorios na nuvem no CIRCLE CI
 
-Os relatorios encontram-se em artifacts dentro do buil da pipeline. 
+Os relatorios encontram-se em artifacts dentro do build da pipeline, nele eh possivel validar quais linhas de codigos foram chamadas e suas validações em um dashboard. Utilizou-se o plugin coverage do phpunit. 
 
 https://app.circleci.com/pipelines/github/jadersaldanha/App
 
