@@ -5,41 +5,41 @@ use PHPUnit\Framework\TestCase;
 
 class DominioTest extends TestCase
 {
-    protected $Average;
+    protected $dominio;
 
     public function setUp()
     {
-        $this->Average = new Dominio("www. teste.com");
+        $this->dominio = new Dominio("www. teste.com");
     }
 
     public function testValidaDominioVazio()
 	{
-		$this->assertFalse($this->Average->validaDominioVazio());
+		$this->assertFalse($this->dominio->validaDominioVazio());
     }
     
     public function testretiraEspacos()
 	{
-        $this->assertContains($this->Average->retiraEspacos(), 'www.teste.com');
+        $this->assertContains($this->dominio->retiraEspacos(), 'www.teste.com');
     }
 
     public function testminimoCaracteres()
 	{
-        $this->assertTrue($this->Average->minimoCaracteres());
+        $this->assertTrue($this->dominio->minimoCaracteres());
     }
 
     public function testmaximoCaracteres()
 	{
-	    $this->assertTrue($this->Average->maximoCaracteres());
+	    $this->assertTrue($this->dominio->maximoCaracteres());
     }
 
     public function testsomenteNumeros()
 	{
-	    $this->assertFalse($this->Average->somenteNumeros());
+	    $this->assertFalse($this->dominio->somenteNumeros());
     }
 
     public function testverificarDominioRegistrado()
 	{
-	 	$this->assertTrue($this->Average->verificarDominioRegistrado());
+	 	$this->assertTrue($this->dominio->verificarDominioRegistrado());
     }
     
 }
